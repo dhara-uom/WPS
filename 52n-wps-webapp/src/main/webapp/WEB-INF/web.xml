@@ -125,25 +125,25 @@
 	</servlet-mapping>
 	
 	<welcome-file-list>
-		<welcome-file>/index.html</welcome-file>
+		<welcome-file>/DynamicProcessDeployTest.html</welcome-file>
 	</welcome-file-list>	
 	
-	<!-- 52n Security -->
-    <context-param>
+	<!-- 52n Security -commented -->
+  <!--  <context-param>
         <param-name>security.config.validation</param-name>
         <param-value>false</param-value>
-        <!--description>
+        &lt;!&ndash;description>
            disables validation of the security-config.xml this is necessary
            because the ${..} mechanism works only if the validation is disabled.
-       </description-->
+       </description&ndash;&gt;
     </context-param>
 
     <filter>
         <filter-name>authn</filter-name>
-        <!-- display-name>Authentication Chain Filter</display-name-->
-        <!-- description>
+        &lt;!&ndash; display-name>Authentication Chain Filter</display-name&ndash;&gt;
+        &lt;!&ndash; description>
             Delegates calls to AuthenticationChainFilter that is defined in the security-config.
-        </description-->
+        </description&ndash;&gt;
         <filter-class>org.n52.security.service.config.support.SecurityConfigDelegatingServletFilter</filter-class>
     </filter>
 
@@ -154,5 +154,5 @@
 
     <listener>
         <listener-class>org.n52.security.service.config.support.SecurityConfigContextListener</listener-class>
-    </listener>	
+    </listener>	-->
 </web-app>
